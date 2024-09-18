@@ -85,8 +85,9 @@ To run the Gradio app locally, execute the following command:
 ```bash
 Copy code
 python app.py
-After running the command, Gradio will launch a local server, and you’ll see a URL like http://localhost:7860. Open this URL in your browser to interact with the bot.
 ```
+After running the command, Gradio will launch a local server, and you’ll see a URL like https://gaur3009-qa-bot.hf.space/. Open this URL in your browser to interact with the bot.
+
 🖼️ User Interface Overview
 Upload PDF Section: Upload a PDF file by dragging and dropping or selecting a file from your computer.
 Ask a Question: Enter a question related to the content of the uploaded document.
