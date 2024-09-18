@@ -50,12 +50,10 @@ cd interactive-qa-bot
 To install all the required dependencies, run the following:
 
 ```bash
-Copy code
 pip install -r requirements.txt
 Or, manually install the dependencies if you don’t have a requirements.txt:
 ```
 ```bash
-Copy code
 pip install gradio transformers weaviate-client cohere pypdf2 torch
 ```
 ### 3. Set Up Weaviate
@@ -67,7 +65,6 @@ Get the API Key and URL of your Weaviate instance.
 Set up the schema in Weaviate if needed.
 
 ```python
-Copy code
 schema = {
     "class": "Document",
     "properties": [
@@ -94,7 +91,6 @@ Get your API Key from the Cohere dashboard.
 You need to configure your Weaviate and Cohere API keys in the code. Replace the placeholders in app.py with your actual keys:
 
 ```python
-Copy code
 auth_config = weaviate.AuthApiKey(api_key="YOUR_WEAVIATE_API_KEY")
 cohere_client = cohere.Client("YOUR_COHERE_API_KEY")
 ```
@@ -104,7 +100,6 @@ cohere_client = cohere.Client("YOUR_COHERE_API_KEY")
 To run the Gradio app locally, execute the following command:
 
 ```bash
-Copy code
 python app.py
 ```
 
@@ -133,7 +128,6 @@ Add the necessary secrets for your Weaviate and Cohere API keys in the "Settings
 Push your repository to Hugging Face using Git:
 
 ```bash
-Copy code
 git add .
 git commit -m "Initial commit"
 git push origin main
