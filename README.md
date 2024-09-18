@@ -1,10 +1,10 @@
 # QA_Bot
 # Workflow
-📄 Interactive QA Bot 🔍
+## 📄 Interactive QA Bot 🔍
 
 This is an Interactive Question Answering Bot that allows users to upload a PDF document and ask questions related to its content. The bot uses Weaviate for document retrieval and Cohere for generating answers. The frontend is designed using Gradio, providing a user-friendly and visually appealing interface.
 
-🔧 Features
+## 🔧 Features
 
 Upload PDF Documents: Users can upload a PDF file, and the document's content is processed and stored in Weaviate for embedding-based search.
 
@@ -15,7 +15,7 @@ Generate Answers: Using Cohere's language generation API, the bot generates cohe
 Modern UI: The interface is built with Gradio, featuring a simple and clean layout with a modern aesthetic.
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
    1.Gradio: For creating a clean and interactive web UI.
 
@@ -29,7 +29,7 @@ Modern UI: The interface is built with Gradio, featuring a simple and clean layo
    
    6.Torch: For processing embeddings.
 
-🚀 How It Works
+## 🚀 How It Works
 
 Upload a PDF: The user uploads a PDF document. The document is read, and the text is split into manageable chunks (500 characters each).
 Generate Embeddings: Each chunk of text is converted into an embedding using a pre-trained transformer model (sentence-transformers/all-MiniLM-L6-v2).
@@ -45,7 +45,7 @@ git clone https://github.com/yourusername/interactive-qa-bot.git
 cd interactive-qa-bot
 ```
 
-###2. Install Dependencies
+### 2. Install Dependencies
 
 To install all the required dependencies, run the following:
 
@@ -58,7 +58,7 @@ Or, manually install the dependencies if you don’t have a requirements.txt:
 Copy code
 pip install gradio transformers weaviate-client cohere pypdf2 torch
 ```
-###3. Set Up Weaviate
+### 3. Set Up Weaviate
 
 Create a Weaviate instance on your preferred cloud provider (e.g., GCP, AWS).
 
@@ -83,7 +83,7 @@ schema = {
 if not client.schema.exists("Document"):
     client.schema.create_class(schema)
 ```
-###4. Set Up Cohere
+### 4. Set Up Cohere
 
 Create a Cohere account at Cohere.
 
@@ -99,7 +99,7 @@ auth_config = weaviate.AuthApiKey(api_key="YOUR_WEAVIATE_API_KEY")
 cohere_client = cohere.Client("YOUR_COHERE_API_KEY")
 ```
 
-###6. Run the Application
+### 6. Run the Application
 
 To run the Gradio app locally, execute the following command:
 
@@ -110,7 +110,7 @@ python app.py
 
 After running the command, Gradio will launch a local server, and you’ll see a URL like https://gaur3009-qa-bot.hf.space/. Open this URL in your browser to interact with the bot.
 
-🖼️ User Interface Overview
+## 🖼️ User Interface Overview
 
 Upload PDF Section: Upload a PDF file by dragging and dropping or selecting a file from your computer.
 
@@ -120,7 +120,7 @@ Retrieved Document Segments: The bot will show the most relevant segments from t
 
 Generated Answer: A detailed answer generated using Cohere will be displayed.
 
-📦 Deployment
+## 📦 Deployment
 
 Deploying to Hugging Face Spaces.
 
@@ -140,7 +140,7 @@ git push origin main
 ```
 Your app will be deployed, and Hugging Face will provide you with a public URL to share your QA bot with others.
 
-🛠️ Troubleshooting
+## 🛠️ Troubleshooting
 
 Weaviate AuthApiKey Error: If you're facing issues related to Weaviate's AuthApiKey, ensure that you have the correct API key and are using the latest version of weaviate-client.
 
