@@ -12,9 +12,13 @@ Modern UI: The interface is built with Gradio, featuring a simple and clean layo
 
 🛠️ Tech Stack
 1.Gradio: For creating a clean and interactive web UI.
+
 2.Weaviate: A vector database for storing and retrieving document embeddings.
+
 3.Cohere: API for generating natural language responses.
+
 4.Transformers: For text embeddings using sentence-transformers/all-MiniLM-L6-v2.
+
 5.PyPDF2: For extracting text from uploaded PDF files.
 6.Torch: For processing embeddings.
 
