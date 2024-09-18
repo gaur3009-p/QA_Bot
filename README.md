@@ -7,8 +7,11 @@ This is an Interactive Question Answering Bot that allows users to upload a PDF 
 🔧 Features
 
 Upload PDF Documents: Users can upload a PDF file, and the document's content is processed and stored in Weaviate for embedding-based search.
+
 Ask Questions: Users can ask questions about the uploaded document, and the bot will retrieve the most relevant document segments using embeddings and vector search.
+
 Generate Answers: Using Cohere's language generation API, the bot generates coherent answers based on the retrieved content.
+
 Modern UI: The interface is built with Gradio, featuring a simple and clean layout with a modern aesthetic.
 
 
