@@ -1,0 +1,6 @@
+cohere
+weaviate-client
+transformers
+gradio
+torch
+PyPDF2
