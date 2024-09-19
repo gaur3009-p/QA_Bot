@@ -41,7 +41,7 @@ Display Results: The document segments and the generated answer are displayed on
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/interactive-qa-bot.git
+git clone https://github.com/gaur3009-p/QA_Bot.git
 cd interactive-qa-bot
 ```
 
