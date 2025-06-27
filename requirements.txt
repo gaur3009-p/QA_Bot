@@ -1,6 +1,6 @@
-cohere
-weaviate-client
-transformers
-gradio
-torch
 PyPDF2
+transformers
+torch
+weaviate-client>=1.23.7
+cohere
+gradio
