@@ -62,7 +62,7 @@ Create a Weaviate instance on your preferred cloud provider (e.g., GCP, AWS).
 
 Get the API Key and URL of your Weaviate instance.
 
-As the project is not live but you can go to weavaite clusters as it sis available free for 14 days so use the URL directly to the code for REST Endpoint and make APi key by using admin in creatinng the api settings.
+As the project is not live but you can go to weavaite clusters as it is available free for 14 days so use the URL directly to the code for REST Endpoint and make APi key by using admin in creatinng the api settings.
 
 Set up the schema in Weaviate if needed.
 
